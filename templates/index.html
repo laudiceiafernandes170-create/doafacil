@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doações</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Sistema de Doações</h1>
+
+<form method="GET">
+    <input type="text" name="busca" placeholder="Buscar produto">
+    <input type="text" name="categoria" placeholder="Categoria">
+    <button type="submit">Buscar</button>
+</form>
+
+<br>
+
+<a href="/criar">+ Novo Produto</a>
+<a href="/logout">Sair</a>
+
+<hr>
+
+{% for produto in produtos %}
+    <div class="card">
+        <h3>{{ produto[1] }}</h3>
+        <p>{{ produto[2] }}</p>
+        <p>Categoria: {{ produto[3] }}</p>
+        <p>Status: {{ produto[4] }}</p>
+
+        {% if produto[4] == 'disponível' %}
+            <a href="/interesse/{{ produto[0] }}">Tenho interesse</a>
+        {% endif %}
+
+        <a href="/deletar/{{ produto[0] }}">Excluir</a>
+    </div>
+{% endfor %}
+
+</body>
+</html>
+

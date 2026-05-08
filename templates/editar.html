@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h2>Editar</h2>
+
+<form method="POST">
+    <input name="titulo" value="{{ tarefa[1] }}"><br>
+    <input name="descricao" value="{{ tarefa[2] }}"><br>
+    <button>Atualizar</button>
+</form>

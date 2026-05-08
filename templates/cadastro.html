@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h2>Cadastro</h2>
+
+<form method="POST">
+    <input name="nome" placeholder="nome"><br>
+    <input name="email" placeholder="email"><br>
+    <input name="senha" type="password" placeholder="senha"><br>
+    <button>Cadastrar</button>
+</form>
+
+<a href="/login">Voltar</a>
