@@ -6,9 +6,8 @@ O DoaFácil é um sistema web desenvolvido para facilitar a divulgação de prod
 
 O sistema permite que usuários realizem cadastro, login e publiquem produtos para doação, além de permitir buscas e demonstração de interesse nos produtos cadastrados.
 
----
 
-## Tecnologias Utilizadas
+ ## Ferramenta s Utilizadas
 
 - Python
 - Flask
@@ -16,7 +15,6 @@ O sistema permite que usuários realizem cadastro, login e publiquem produtos pa
 - HTML5
 - CSS3
 
----
 
 ## Funcionalidades
 
@@ -29,7 +27,6 @@ O sistema permite que usuários realizem cadastro, login e publiquem produtos pa
 - Filtro por categoria
 - Demonstração de interesse
 
----
 
 ## Como Executar o Projeto
 
